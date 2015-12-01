@@ -38,12 +38,18 @@ public class SummaryActivity extends AppCompatActivity {
         final LinearLayout btnDay = (LinearLayout)findViewById(R.id.linear_day);
         final LinearLayout btnMonth = (LinearLayout)findViewById(R.id.linear_month);
         final LinearLayout btnYear = (LinearLayout)findViewById(R.id.linear_year);
+        final TextView textday = (TextView)findViewById(R.id.text_day);
+        final TextView textmonth = (TextView)findViewById(R.id.text_month);
+        final TextView textyear = (TextView)findViewById(R.id.text_year);
         btnDay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 btnDay.setBackgroundColor(Color.parseColor("#7ba6a3"));
                 btnMonth.setBackgroundColor(Color.parseColor("#e9fff8"));
                 btnYear.setBackgroundColor(Color.parseColor("#e9fff8"));
+                textday.setTextColor(Color.parseColor("#fff3db"));
+                textmonth.setTextColor(Color.parseColor("#009688"));
+                textyear.setTextColor(Color.parseColor("#009688"));
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
                         SummaryActivity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
@@ -65,6 +71,9 @@ public class SummaryActivity extends AppCompatActivity {
                 btnDay.setBackgroundColor(Color.parseColor("#e9fff8"));
                 btnMonth.setBackgroundColor(Color.parseColor("#7ba6a3"));
                 btnYear.setBackgroundColor(Color.parseColor("#e9fff8"));
+                textday.setTextColor(Color.parseColor("#009688"));
+                textmonth.setTextColor(Color.parseColor("#fff3db"));
+                textyear.setTextColor(Color.parseColor("#009688"));
             }
         }));
         btnYear.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +82,9 @@ public class SummaryActivity extends AppCompatActivity {
                 btnDay.setBackgroundColor(Color.parseColor("#e9fff8"));
                 btnMonth.setBackgroundColor(Color.parseColor("#e9fff8"));
                 btnYear.setBackgroundColor(Color.parseColor("#7ba6a3"));
+                textday.setTextColor(Color.parseColor("#009688"));
+                textmonth.setTextColor(Color.parseColor("#009688"));
+                textyear.setTextColor(Color.parseColor("#fff3db"));
 
             }
         });

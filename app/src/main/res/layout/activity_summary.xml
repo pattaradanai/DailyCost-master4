@@ -103,6 +103,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Day"
+                android:textColor="#fff3db"
                 android:id="@+id/text_day"
                 android:gravity="center_horizontal"
                  />
@@ -121,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Month"
+                android:textColor="#009688"
                 android:id="@+id/text_month"
                 android:gravity="center_horizontal" />
         </LinearLayout>
@@ -138,6 +140,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Year"
+                android:textColor="#009688"
                 android:id="@+id/text_year"
                 android:gravity="center_horizontal" />
         </LinearLayout>
